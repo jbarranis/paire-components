@@ -70,7 +70,21 @@
    **/
   "teambit.workspace/variants": {
     "*": {
-      "teambit.react/react": {}
+      "teambit.react/react": {},
+      "teambit.pkg/pkg": {
+        "packageJson": {
+          "name": "@paire/{scope}.{name}",
+          "private": false,
+          "publishConfig": {
+            "registry": "https://npm.pkg.github.com",
+            "scope": "paire"
+          },
+          "repository": {
+            "type": "git",
+            "url": "https://github.com/jbarranis/paire-components"
+          }
+        }
+      }
     }
     // "{ui/**}, {pages/**}": {
     //   // uses the custom env
