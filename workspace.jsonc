@@ -27,7 +27,7 @@
     /**
      * default scope for all components in workspace.
      **/
-    "defaultScope": "paire.components"
+    "defaultScope": "paire.paire"
   },
   /**
    * main configuration for component dependency resolution.
@@ -70,21 +70,24 @@
    **/
   "teambit.workspace/variants": {
     "*": {
-      "teambit.react/react": {},
-      "teambit.pkg/pkg": {
-        "packageJson": {
-          "name": "@paire/{scope}.{name}",
-          "private": false,
-          "publishConfig": {
-            "registry": "https://npm.pkg.github.com",
-            "scope": "paire"
-          },
-          "repository": {
-            "type": "git",
-            "url": "https://github.com/jbarranis/paire-components"
-          }
-        }
-      }
+      "teambit.react/react": {}
+      // "teambit.pkg/pkg": {
+      //   "packageManagerPublishArgs": [
+      //     "--access public"
+      //   ],
+      //   "packageJson": {
+      //     "name": "@paire/{scope}.{name}",
+      //     "private": false,
+      //     "publishConfig": {
+      //       "registry": "https://npm.pkg.github.com",
+      //       "scope": "paire-components"
+      //     },
+      //     "repository": {
+      //       "type": "git",
+      //       "url": "https://github.com/jbarranis/paire-components"
+      //     }
+      //   }
+      // }
     }
     // "{ui/**}, {pages/**}": {
     //   // uses the custom env

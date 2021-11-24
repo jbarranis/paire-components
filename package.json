@@ -1,0 +1,12 @@
+{
+  "name": "paire",
+  "version": "0.0.1",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com",
+    "scope": "paire-components"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jbarranis/paire-components"
+  }
+}

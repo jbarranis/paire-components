@@ -8,12 +8,3 @@ export const BasicCard = () => (
     text="lean how to self host these components"
   />
 );
-
-export const CardWithCopyBox = () => (
-  <Card
-    link="https://harmony-docs.bit.dev/aspects/generator"
-    heading="Templates"
-    text="to see a list of available templates"
-    command="bit templates"
-  />
-);

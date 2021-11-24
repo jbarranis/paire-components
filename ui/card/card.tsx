@@ -1,6 +1,5 @@
 import React from 'react';
 import { ExternalLink } from '@teambit/design.ui.external-link';
-import { CopyBox } from '@teambit/documenter.ui.copy-box';
 
 import styles from './card.module.scss';
 
@@ -17,25 +16,14 @@ export type CardProps = {
    * text for the card
    */
   text?: string;
-  /**
-   * command for the copy box component
-   */
-  command?: string;
 };
 
-export function Card(
-  {
-    heading, command, text, link,
-  }: CardProps,
-) {
+export function Card({ text, link }: CardProps) {
   return (
     <div className={styles.card}>
       <ExternalLink href={link}>
         <p className={styles.text}>{text}</p>
       </ExternalLink>
-      {command ? (
-        <CopyBox className={styles['copy-box']}>{command}</CopyBox>
-      ) : null}
     </div>
   );
 }
