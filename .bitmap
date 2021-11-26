@@ -11,7 +11,7 @@
 {
     "card": {
         "scope": "paire.paire",
-        "version": "0.0.1",
+        "version": "0.0.3",
         "mainFile": "index.ts",
         "rootDir": "ui/card"
     },

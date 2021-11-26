@@ -70,39 +70,40 @@
    **/
   "teambit.workspace/variants": {
     "*": {
-      "teambit.react/react": {}
-      // "teambit.pkg/pkg": {
-      //   "packageManagerPublishArgs": [
-      //     "--access public"
-      //   ],
-      //   "packageJson": {
-      //     "name": "@paire/{scope}.{name}",
-      //     "private": false,
-      //     "publishConfig": {
-      //       "registry": "https://npm.pkg.github.com",
-      //       "scope": "paire-components"
-      //     },
-      //     "repository": {
-      //       "type": "git",
-      //       "url": "https://github.com/jbarranis/paire-components"
-      //     }
-      //   }
-      // }
+      "teambit.pkg/pkg": {
+        "packageManagerPublishArgs": [
+          "--access public"
+        ],
+        "packageJson": {
+          "name": "@{scope}/{name}",
+          "private": false,
+          "publishConfig": {
+            "scope": "@paire", // org created in npm
+            "registry": "https://registry.npmjs.org/" 
+            // or any registry url
+          }
+        }
+      }
     }
-    // "{ui/**}, {pages/**}": {
-    //   // uses the custom env
-    //   // "company.scope/envs/my-react": {}
-    //   // uncomment the line below if you remove the custom env and remove the line above
-    //   "teambit.react/react": {},
-    // },
-    // "{themes/**}": {
+    // "*": {
     //   "teambit.react/react": {}
-    // },
-    // "{content/**}": {
-    //   "teambit.mdx/mdx": {}
-    // },
-    // "{envs/**}, {extensions/**}": {
-    //   "teambit.harmony/aspect": {}
+    //   // "teambit.pkg/pkg": {
+    //   //   "packageManagerPublishArgs": [
+    //   //     "--access public"
+    //   //   ],
+    //   //   "packageJson": {
+    //   //     "name": "@paire/{scope}.{name}",
+    //   //     "private": false,
+    //   //     "publishConfig": {
+    //   //       "registry": "https://npm.pkg.github.com",
+    //   //       "scope": "paire-components"
+    //   //     },
+    //   //     "repository": {
+    //   //       "type": "git",
+    //   //       "url": "https://github.com/jbarranis/paire-components"
+    //   //     }
+    //   //   }
+    //   // }
     // }
   }
 }
